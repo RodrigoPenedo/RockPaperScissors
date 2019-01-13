@@ -99,4 +99,34 @@ class GameTest {
         //Then
         assertEquals(result, expected);
     }
+
+    @Test
+    public void bothPlayersPlayingRockShouldResultInATie() {
+        //Given / When
+        String result = playMatch("rock", "rock");
+        String expected = "It's a Tie!";
+
+        //Then
+        assertEquals(result, expected);
+    }
+
+    @Test
+    public void bothPlayersPlayingPaperShouldResultInATie() {
+        //Given / When
+        String result = playMatch("paper", "paper");
+        String expected = "It's a Tie!";
+
+        //Then
+        assertEquals(result, expected);
+    }
+
+    @Test
+    public void bothPlayersPlayingScissorsShouldResultInATie() {
+        //Given / When
+        String result = playMatch("scissors", "scissors");
+        String expected = "It's a Tie!";
+
+        //Then
+        assertEquals(result, expected);
+    }
 }

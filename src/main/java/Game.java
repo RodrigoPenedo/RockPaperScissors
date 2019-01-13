@@ -11,13 +11,13 @@ public class Game {
         System.out.println("Welcome To Rock Paper Scissors!");
 
         while (!Arrays.asList(HAND).contains(player2)) {
-            Scanner scan = new Scanner(System.in);
+            Scanner scanner = new Scanner(System.in);
             System.out.println("Choice: ");
-            player2 = scan.nextLine().toLowerCase();
+            player2 = scanner.nextLine().toLowerCase();
         }
 
         if (player1.equals(player2)) {
-            System.out.println("It's a tie!");
+            System.out.println("It's a Tie!");
         }
         else if (player1.equals("rock")) {
             if (player2.equals("paper")) {
@@ -25,7 +25,7 @@ public class Game {
             } else {
                 System.out.println("You Lose!");
             }
-        }
+}
         else if (player1.equals("paper")) {
             if (player2.equals("scissors")) {
                 System.out.println("You Win!");
